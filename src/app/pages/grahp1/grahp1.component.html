@@ -1,1 +1,31 @@
-<p>grahp1 works!</p>
+<div class="row">
+  <div class="col-6">
+    <app-doughnut> </app-doughnut>
+  </div>
+  <div class="col-6">
+    <app-doughnut
+      [backgroundColor]="graph2.backgroundColor"
+      [data]="graph2.data"
+      [doughnutChartLabels]="graph2.label"
+    >
+    </app-doughnut>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <app-doughnut
+      [backgroundColor]="graph3.backgroundColor"
+      [data]="graph3.data"
+      [doughnutChartLabels]="graph3.label"
+    >
+    </app-doughnut>
+  </div>
+  <div class="col-6">
+    <app-doughnut
+      [backgroundColor]="graph4.backgroundColor"
+      [data]="graph4.data"
+      [doughnutChartLabels]="graph4.label"
+    >
+    </app-doughnut>
+  </div>
+</div>

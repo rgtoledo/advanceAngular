@@ -6,6 +6,8 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
+import { ComponentsModule } from '../components/components.module';
+
 
 
 
@@ -20,6 +22,7 @@ import { PagesRoutingModule } from './pages-routing.module';
     CommonModule,
     SharedModule,
     PagesRoutingModule,
+    ComponentsModule,    
   ]
 })
 export class PagesModule { }

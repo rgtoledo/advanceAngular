@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   { path: 'dashboard', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
 
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'error', component: NotPageFoundComponent },
   { path: '**', redirectTo: 'error' },
 ];
